@@ -8,4 +8,4 @@ Este proyecto es un conjunto de pruebas automatizadas utilizando Selenium, Cucum
 ## Ejecución de pruebas
 Desde la clase runner
 
-image
+![image](https://github.com/user-attachments/assets/7a054010-e6c1-4b3f-b8ac-727e6b333b15)
