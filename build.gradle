@@ -67,9 +67,24 @@ jacocoTestReport {
 
 sonarqube {
     properties {
-        property "sonar.projectKey", "xcode98_selenium-fc-contra-cuentas"
+        // Para SonarCloud (comentar si usas SonarQube local)
+        property "sonar.projectKey", "xcode98_selenium-pom-cucumber"
         property "sonar.organization", "xcode98"
         property "sonar.host.url", "https://sonarcloud.io"
+        
+        // Para SonarQube Local (descomentar si usas servidor local)
+        // property "sonar.projectKey", "selenium-fc-contra-cuentas"
+        // property "sonar.host.url", "http://localhost:9000"
+        // property "sonar.login", "admin"
+        // property "sonar.password", "admin"
+        
+        // Configuración común
+        property "sonar.coverage.jacoco.xmlReportPaths", "build/reports/jacoco/test/jacocoTestReport.xml"
+        property "sonar.java.source", "15"
+        property "sonar.sources", "src/main/java,src/test/java"
+        property "sonar.tests", "src/test/java"
+        property "sonar.test.inclusions", "**/*Test.java,**/Test*.java,**/*Steps.java,**/Runner.java"
+        property "sonar.exclusions", "**/target/**,**/build/**,**/bin/**"
     }
 }
 

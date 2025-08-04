@@ -96,8 +96,6 @@ public class Cobranza extends BasePage{
             e.printStackTrace();
         }
     }
-    
-   
       
     public void formCobranzaDatosGenerales(){
         
@@ -133,8 +131,6 @@ public class Cobranza extends BasePage{
         actions.sendKeys("2").perform();
     }
 
-    
-    
     public void tabCobranza(){
         
         clickElement(tabCobranza);
