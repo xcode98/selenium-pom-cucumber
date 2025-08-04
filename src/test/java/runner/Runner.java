@@ -10,9 +10,9 @@ import io.cucumber.junit.CucumberOptions;
     glue = "steps",
     tags = "@Test",
     //plugin = {"pretty", "html:target/cucumber-reports"},
-    plugin = {"summary","pretty","html:target/cucumber-reports",
-              "json:target/cucumber-reports",
-              "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
+    // plugin = {"summary","pretty","html:target/cucumber-reports",
+    //           "json:target/cucumber-reports",
+    //           "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
     monochrome = true
 )
 

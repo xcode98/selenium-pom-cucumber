@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2024-07-24T14:23:42.591Z",
+        "start_timestamp": "2024-12-27T14:11:32.889Z",
         "line": 3,
         "name": "Ingresar y navegar en la página de la Reniec",
         "description": "",
@@ -13,9 +13,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT\n  (Session info: chrome\u003d127.0.6533.73)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027PANCHO\u0027, ip: \u0027192.168.1.36\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002715.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.73, chrome: {chromedriverVersion: 127.0.6533.72 (9755e24ca85a..., userDataDir: C:\\Users\\francis\\AppData\\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52305}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 6f00cc3a355d6c79a436b252c2db1642\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)\r\n\tat pages.BasePage.navegarAGoogle(BasePage.java:34)\r\n\tat pages.Reniec.navegatePage(Reniec.java:21)\r\n\tat steps.ReniecSteps.navegateToPageStep(ReniecSteps.java:16)\r\n\tat ✽.el usuario esta en la pagina de Peruanos en el Extrangero(file:///C:/Users/francis/Documents/kingkong/King/src/test/resources/features/Reniec.feature:4)\r\n",
-              "duration": 44897182400,
-              "status": "failed"
+              "duration": 3615435800,
+              "status": "passed"
             },
             "line": 4,
             "name": "el usuario esta en la pagina de Peruanos en el Extrangero",
@@ -26,8 +25,7 @@
           },
           {
             "result": {
-              "duration": 999900,
-              "status": "skipped"
+              "status": "passed"
             },
             "line": 5,
             "name": "el usuario despliega la opcion Consulados en el mundo",
@@ -38,7 +36,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 1056700,
+              "status": "passed"
             },
             "line": 6,
             "name": "el usuario realiza una buesqueda y regresa a la anterior pestana",
@@ -71,7 +70,88 @@
       }
     ]
   }
-]m;
+]379-.309-3.312-.292a4.416%204.416%200%2000-1.666.352%203.5%203.5%200%2000-1.218.738%201.817%201.817%200%20001.409%203.171%203.3%203.3%200%20001.442-.321c1.436-.62%203.141-2.32%203.346-3.648zm2.61%202a6.556%206.556%200%2000-3.724%203.506%203.091%203.091%200%2000-.321%201.314%201.907%201.907%200%20003.3%201.346%207.422%207.422%200%2000.7-1.218c.621-1.333.866-3.72.046-4.948zm2.557-7.167a5.941%205.941%200%20003.7-3.167%203.243%203.243%200%2000.319-1.346%201.915%201.915%200%2000-1.794-1.954%201.832%201.832%200%2000-1.6.641%207.382%207.382%200%2000-.705%201.218c-.62%201.434-.842%203.48.081%204.603zm4.208%2012.115a3.244%203.244%200%2000-.321-1.345%205.869%205.869%200%2000-3.554-3.269%205.386%205.386%200%2000-.226%204.711%204.147%204.147%200%2000.7%201.121c1.133%201.23%203.505.32%203.402-1.218zm4.2-6.28a7.466%207.466%200%2000-1.217-.7%204.425%204.425%200%2000-1.666-.352%206.4%206.4%200%2000-3.188.555%205.959%205.959%200%20003.316%203.386%203.672%203.672%200%20001.442.32%201.8%201.8%200%20001.31-3.209z%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E">
+	<style>
+.cucumber-react .cucumber-status--passed {
+  color: #2CB14A;
+}
+.cucumber-react .cucumber-status--skipped {
+  color: #00A0CC;
+}
+.cucumber-react .cucumber-status--pending {
+  color: #FFAD33;
+}
+.cucumber-react .cucumber-status--undefined {
+  color: #FFAD33;
+}
+.cucumber-react .cucumber-status--ambiguous {
+  color: #F4EBFD;
+}
+.cucumber-react .cucumber-status--failed {
+  color: #BB0000;
+}
+.cucumber-react .cucumber-status--unknown {
+  color: #B6BECB;
+}
+.cucumber-react h1, .cucumber-react h2, .cucumber-react h3 {
+  padding: 0;
+  margin: 0;
+}
+.cucumber-react a {
+  color: inherit;
+}
+.cucumber-react .gherkin-document-list {
+  font: 14px "Open Sans", sans-serif;
+  color: #161C24;
+  background: #fff;
+  overflow-x: hidden;
+}
+.cucumber-react .cucumber-title {
+  margin-top: 0.3em;
+  margin-bottom: 0;
+  display: inline-block;
+}
+.cucumber-react .cucumber-title__keyword {
+  font-weight: bold;
+}
+.cucumber-react .cucumber-title__text {
+  font-weight: normal;
+}
+.cucumber-react .cucumber-tags {
+  padding: 0;
+  margin-bottom: 0;
+}
+.cucumber-react .cucumber-tags .cucumber-tag {
+  display: inline;
+  list-style-type: none;
+  padding: 4px 8px 4px 8px;
+  margin-right: 6px;
+  background-color: #FFFFFF;
+  border-radius: 6px;
+}
+.cucumber-react .cucumber-feature__icon {
+  padding-top: 0.35em;
+  padding-right: 0.5em;
+}
+.cucumber-react .cucumber-description,
+.cucumber-react .cucumber-children {
+  margin-left: 1em;
+}
+.cucumber-react .cucumber-feature,
+.cucumber-react .cucumber-rule,
+.cucumber-react .cucumber-scenario,
+.cucumber-react .cucumber-background {
+  margin-bottom: 1em;
+}
+.cucumber-react .cucumber-steps {
+  list-style-type: none;
+  padding-left: 10px;
+}
+.cucumber-react .cucumber-steps .cucumber-step {
+  display: flex;
+}
+.cucumber-react .cucumber-steps .cucumber-step__status {
+  padding-top: 0.2em;
   padding-right: 0.5em;
 }
 .cucumber-react .cucumber-steps .cucumber-step__content {
@@ -290,7 +370,7 @@
 <div id="content">
 </div>
 <script>
-window.CUCUMBER_MESSAGES = [{"meta":{"protocolVersion":"15.0.0","implementation":{"name":"cucumber-jvm","version":"6.11.0"},"runtime":{"name":"Java HotSpot(TM) 64-Bit Server VM","version":"15.0.2+7-27"},"os":{"name":"Windows 10"},"cpu":{"name":"amd64"}}},{"testRunStarted":{"timestamp":{"seconds":"1721831022","nanos":533020400}}},{"source":{"uri":"file:///C:/Users/francis/Documents/kingkong/King/src/test/resources/features/Reniec.feature","data":"@Test\r\nFeature: Navegar por la página de la Reniec\r\nScenario: Ingresar y navegar en la página de la Reniec\r\n    Given el usuario esta en la pagina de Peruanos en el Extrangero\r\n    When el usuario despliega la opcion Consulados en el mundo\r\n    Then el usuario realiza una buesqueda y regresa a la anterior pestana","mediaType":"text/x.cucumber.gherkin+plain"}},{"gherkinDocument":{"uri":"file:///C:/Users/francis/Documents/kingkong/King/src/test/resources/features/Reniec.feature","feature":{"location":{"line":2,"column":1},"tags":[{"location":{"line":1,"column":1},"name":"@Test","id":"26d86081-5b27-4aca-9866-83ec1cb74d88"}],"language":"en","keyword":"Feature","name":"Navegar por la página de la Reniec","children":[{"scenario":{"location":{"line":3,"column":1},"keyword":"Scenario","name":"Ingresar y navegar en la página de la Reniec","steps":[{"location":{"line":4,"column":5},"keyword":"Given ","text":"el usuario esta en la pagina de Peruanos en el Extrangero","id":"4d2e6697-f3ba-43d7-b919-9f658c6fdc46"},{"location":{"line":5,"column":5},"keyword":"When ","text":"el usuario despliega la opcion Consulados en el mundo","id":"befa8cd3-97fb-4f34-8273-224832620867"},{"location":{"line":6,"column":5},"keyword":"Then ","text":"el usuario realiza una buesqueda y regresa a la anterior pestana","id":"d1477e74-a791-4756-afa1-6188429d93ba"}],"id":"8d7ba07d-4cb3-44b7-9a7b-b0ca7f355a54"}}]}}},{"pickle":{"id":"1dc06594-7235-4555-8255-d1b07ce6e4b0","uri":"file:///C:/Users/francis/Documents/kingkong/King/src/test/resources/features/Reniec.feature","name":"Ingresar y navegar en la página de la Reniec","language":"en","steps":[{"text":"el usuario esta en la pagina de Peruanos en el Extrangero","id":"5601981a-a9e4-495d-95c8-daf51eea0de8","astNodeIds":["4d2e6697-f3ba-43d7-b919-9f658c6fdc46"]},{"text":"el usuario despliega la opcion Consulados en el mundo","id":"e88c2dcd-de85-40ce-98d2-8bd4465429f9","astNodeIds":["befa8cd3-97fb-4f34-8273-224832620867"]},{"text":"el usuario realiza una buesqueda y regresa a la anterior pestana","id":"b91996e6-036a-427d-aae8-867b5ad8c0a5","astNodeIds":["d1477e74-a791-4756-afa1-6188429d93ba"]}],"tags":[{"name":"@Test","astNodeId":"26d86081-5b27-4aca-9866-83ec1cb74d88"}],"astNodeIds":["8d7ba07d-4cb3-44b7-9a7b-b0ca7f355a54"]}},{"testCase":{"id":"f036f92d-714c-4fc1-b122-c252efd11024","pickleId":"1dc06594-7235-4555-8255-d1b07ce6e4b0","testSteps":[{"id":"8c8ca452-6a0e-4ee5-aa44-67028b10af13","pickleStepId":"5601981a-a9e4-495d-95c8-daf51eea0de8","stepDefinitionIds":["bad8883e-08f4-478c-a2cf-af577716ff72"],"stepMatchArgumentsLists":[{}]},{"id":"5d417da3-9e11-41f5-a6df-56356cf17c44","pickleStepId":"e88c2dcd-de85-40ce-98d2-8bd4465429f9","stepDefinitionIds":["38f318c0-6e54-4269-98ea-793e0d8d32a3"],"stepMatchArgumentsLists":[{}]},{"id":"33d11016-6c0b-47be-80d4-b9ded9aa10d7","pickleStepId":"b91996e6-036a-427d-aae8-867b5ad8c0a5","stepDefinitionIds":["aea00cab-4bb0-4664-ba8f-911331621ceb"],"stepMatchArgumentsLists":[{}]}]}},{"testCaseStarted":{"timestamp":{"seconds":"1721831022","nanos":591020200},"testCaseId":"f036f92d-714c-4fc1-b122-c252efd11024","id":"1f6d8a3b-013a-40ca-ba67-a6f70499bec5"}},{"testStepStarted":{"timestamp":{"seconds":"1721831022","nanos":618020300},"testStepId":"8c8ca452-6a0e-4ee5-aa44-67028b10af13","testCaseStartedId":"1f6d8a3b-013a-40ca-ba67-a6f70499bec5"}},{"testStepFinished":{"testStepResult":{"status":"FAILED","message":"org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT\n  (Session info: chrome\u003d127.0.6533.73)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027PANCHO\u0027, ip: \u0027192.168.1.36\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002715.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.73, chrome: {chromedriverVersion: 127.0.6533.72 (9755e24ca85a..., userDataDir: C:\\Users\\francis\\AppData\\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52305}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 6f00cc3a355d6c79a436b252c2db1642\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)\r\n\tat pages.BasePage.navegarAGoogle(BasePage.java:34)\r\n\tat pages.Reniec.navegatePage(Reniec.java:21)\r\n\tat steps.ReniecSteps.navegateToPageStep(ReniecSteps.java:16)\r\n\tat ✽.el usuario esta en la pagina de Peruanos en el Extrangero(file:///C:/Users/francis/Documents/kingkong/King/src/test/resources/features/Reniec.feature:4)\r\n","duration":{"seconds":"44","nanos":897182400}},"timestamp":{"seconds":"1721831067","nanos":515202700},"testStepId":"8c8ca452-6a0e-4ee5-aa44-67028b10af13","testCaseStartedId":"1f6d8a3b-013a-40ca-ba67-a6f70499bec5"}},{"testStepStarted":{"timestamp":{"seconds":"1721831067","nanos":525202900},"testStepId":"5d417da3-9e11-41f5-a6df-56356cf17c44","testCaseStartedId":"1f6d8a3b-013a-40ca-ba67-a6f70499bec5"}},{"testStepFinished":{"testStepResult":{"status":"SKIPPED","duration":{"nanos":999900}},"timestamp":{"seconds":"1721831067","nanos":526202800},"testStepId":"5d417da3-9e11-41f5-a6df-56356cf17c44","testCaseStartedId":"1f6d8a3b-013a-40ca-ba67-a6f70499bec5"}},{"testStepStarted":{"timestamp":{"seconds":"1721831067","nanos":526202800},"testStepId":"33d11016-6c0b-47be-80d4-b9ded9aa10d7","testCaseStartedId":"1f6d8a3b-013a-40ca-ba67-a6f70499bec5"}},{"testStepFinished":{"testStepResult":{"status":"SKIPPED","duration":{}},"timestamp":{"seconds":"1721831067","nanos":526202800},"testStepId":"33d11016-6c0b-47be-80d4-b9ded9aa10d7","testCaseStartedId":"1f6d8a3b-013a-40ca-ba67-a6f70499bec5"}},{"testCaseFinished":{"timestamp":{"seconds":"1721831067","nanos":527202700},"testCaseStartedId":"1f6d8a3b-013a-40ca-ba67-a6f70499bec5"}},{"testRunFinished":{"timestamp":{"seconds":"1721831067","nanos":532202900}}}];
+window.CUCUMBER_MESSAGES = [{"meta":{"protocolVersion":"15.0.0","implementation":{"name":"cucumber-jvm","version":"6.11.0"},"runtime":{"name":"Java HotSpot(TM) 64-Bit Server VM","version":"15.0.2+7-27"},"os":{"name":"Windows 10"},"cpu":{"name":"amd64"}}},{"testRunStarted":{"timestamp":{"seconds":"1735308692","nanos":838162300}}},{"source":{"uri":"file:///C:/Users/xcode/Documents/Selenium-FC-Contra%20cuentas/src/test/resources/features/Reniec.feature","data":"@Test\r\nFeature: Navegar por la página de la Reniec\r\nScenario: Ingresar y navegar en la página de la Reniec\r\n    Given el usuario esta en la pagina de Peruanos en el Extrangero\r\n    When el usuario despliega la opcion Consulados en el mundo\r\n    Then el usuario realiza una buesqueda y regresa a la anterior pestana","mediaType":"text/x.cucumber.gherkin+plain"}},{"gherkinDocument":{"uri":"file:///C:/Users/xcode/Documents/Selenium-FC-Contra%20cuentas/src/test/resources/features/Reniec.feature","feature":{"location":{"line":2,"column":1},"tags":[{"location":{"line":1,"column":1},"name":"@Test","id":"4e3cf788-a7fe-4c7c-b445-93d37f184985"}],"language":"en","keyword":"Feature","name":"Navegar por la página de la Reniec","children":[{"scenario":{"location":{"line":3,"column":1},"keyword":"Scenario","name":"Ingresar y navegar en la página de la Reniec","steps":[{"location":{"line":4,"column":5},"keyword":"Given ","text":"el usuario esta en la pagina de Peruanos en el Extrangero","id":"7868f15a-b807-49b1-a90d-6e7741f9fff2"},{"location":{"line":5,"column":5},"keyword":"When ","text":"el usuario despliega la opcion Consulados en el mundo","id":"10d069a5-20f0-49f1-aa81-739d554759a8"},{"location":{"line":6,"column":5},"keyword":"Then ","text":"el usuario realiza una buesqueda y regresa a la anterior pestana","id":"1b682740-affe-473e-9f76-ecb7011ebcaa"}],"id":"c0f076d7-8886-49e9-af16-9f6a059f603b"}}]}}},{"pickle":{"id":"3285e166-5240-409d-aad0-4f5bcf75a320","uri":"file:///C:/Users/xcode/Documents/Selenium-FC-Contra%20cuentas/src/test/resources/features/Reniec.feature","name":"Ingresar y navegar en la página de la Reniec","language":"en","steps":[{"text":"el usuario esta en la pagina de Peruanos en el Extrangero","id":"a48de090-eea0-435d-8452-f114b98605e6","astNodeIds":["7868f15a-b807-49b1-a90d-6e7741f9fff2"]},{"text":"el usuario despliega la opcion Consulados en el mundo","id":"28954dc3-23d0-4d88-8a2c-cac42a57ed0c","astNodeIds":["10d069a5-20f0-49f1-aa81-739d554759a8"]},{"text":"el usuario realiza una buesqueda y regresa a la anterior pestana","id":"f7add633-3419-4f37-bb5c-7fcafe174499","astNodeIds":["1b682740-affe-473e-9f76-ecb7011ebcaa"]}],"tags":[{"name":"@Test","astNodeId":"4e3cf788-a7fe-4c7c-b445-93d37f184985"}],"astNodeIds":["c0f076d7-8886-49e9-af16-9f6a059f603b"]}},{"testCase":{"id":"8e3eacec-2765-45f4-abb7-1e62811cd4dd","pickleId":"3285e166-5240-409d-aad0-4f5bcf75a320","testSteps":[{"id":"8c521575-ffb0-4e8c-bbaa-00d341b588ce","pickleStepId":"a48de090-eea0-435d-8452-f114b98605e6","stepDefinitionIds":["56571c06-ac0b-4e4d-bab8-969466cb9f9d"],"stepMatchArgumentsLists":[{}]},{"id":"4216cb65-1bbf-4c70-9db8-5620e4028022","pickleStepId":"28954dc3-23d0-4d88-8a2c-cac42a57ed0c","stepDefinitionIds":["d95f079d-f20a-4426-ace4-71b2ac0da197"],"stepMatchArgumentsLists":[{}]},{"id":"8d81af97-8922-45bd-b5ed-d30288466d7b","pickleStepId":"f7add633-3419-4f37-bb5c-7fcafe174499","stepDefinitionIds":["1e560b9f-031b-4c5d-bc1a-095006800c1d"],"stepMatchArgumentsLists":[{}]}]}},{"testCaseStarted":{"timestamp":{"seconds":"1735308692","nanos":889656100},"testCaseId":"8e3eacec-2765-45f4-abb7-1e62811cd4dd","id":"509cfb8b-8b77-41bd-a8c8-768d8328c61a"}},{"testStepStarted":{"timestamp":{"seconds":"1735308692","nanos":915405000},"testStepId":"8c521575-ffb0-4e8c-bbaa-00d341b588ce","testCaseStartedId":"509cfb8b-8b77-41bd-a8c8-768d8328c61a"}},{"testStepFinished":{"testStepResult":{"status":"PASSED","duration":{"seconds":"3","nanos":615435800}},"timestamp":{"seconds":"1735308696","nanos":530840800},"testStepId":"8c521575-ffb0-4e8c-bbaa-00d341b588ce","testCaseStartedId":"509cfb8b-8b77-41bd-a8c8-768d8328c61a"}},{"testStepStarted":{"timestamp":{"seconds":"1735308696","nanos":536365600},"testStepId":"4216cb65-1bbf-4c70-9db8-5620e4028022","testCaseStartedId":"509cfb8b-8b77-41bd-a8c8-768d8328c61a"}},{"testStepFinished":{"testStepResult":{"status":"PASSED","duration":{}},"timestamp":{"seconds":"1735308696","nanos":536365600},"testStepId":"4216cb65-1bbf-4c70-9db8-5620e4028022","testCaseStartedId":"509cfb8b-8b77-41bd-a8c8-768d8328c61a"}},{"testStepStarted":{"timestamp":{"seconds":"1735308696","nanos":536365600},"testStepId":"8d81af97-8922-45bd-b5ed-d30288466d7b","testCaseStartedId":"509cfb8b-8b77-41bd-a8c8-768d8328c61a"}},{"testStepFinished":{"testStepResult":{"status":"PASSED","duration":{"nanos":1056700}},"timestamp":{"seconds":"1735308696","nanos":537422300},"testStepId":"8d81af97-8922-45bd-b5ed-d30288466d7b","testCaseStartedId":"509cfb8b-8b77-41bd-a8c8-768d8328c61a"}},{"testCaseFinished":{"timestamp":{"seconds":"1735308696","nanos":537422300},"testCaseStartedId":"509cfb8b-8b77-41bd-a8c8-768d8328c61a"}},{"testRunFinished":{"success":true,"timestamp":{"seconds":"1735308696","nanos":539421300}}}];
 </script>
 <script>
 /*! For license information please see main.js.LICENSE.txt */

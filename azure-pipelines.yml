@@ -1,0 +1,138 @@
+# Azure DevOps Pipeline para Selenium Tests con SonarCloud
+trigger:
+  branches:
+    include:
+    - main
+    - master
+    - develop
+
+pr:
+  branches:
+    include:
+    - main
+    - master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  GRADLE_USER_HOME: $(Pipeline.Workspace)/.gradle
+  JAVA_VERSION: '15'
+
+stages:
+- stage: Build_and_Test
+  displayName: 'Build and Test'
+  jobs:
+  - job: Test
+    displayName: 'Run Tests'
+    steps:
+    
+    - task: JavaToolInstaller@0
+      displayName: 'Setup JDK 15'
+      inputs:
+        versionSpec: '15'
+        jdkArchitectureOption: 'x64'
+        jdkSourceOption: 'PreInstalled'
+    
+    - task: Cache@2
+      displayName: 'Cache Gradle packages'
+      inputs:
+        key: 'gradle | "$(Agent.OS)" | **/build.gradle'
+        restoreKeys: |
+          gradle | "$(Agent.OS)"
+          gradle
+        path: $(GRADLE_USER_HOME)
+    
+    - script: |
+        chmod +x gradlew
+        ./gradlew clean build -x test
+      displayName: 'Build project'
+    
+    - script: |
+        # Setup display for headless browser testing
+        export DISPLAY=:99
+        Xvfb :99 -screen 0 1024x768x24 &
+        sleep 3
+        
+        # Install Chrome
+        wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+        sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+        sudo apt-get update
+        sudo apt-get install google-chrome-stable
+        
+        # Run tests
+        ./gradlew test jacocoTestReport
+      displayName: 'Run Unit Tests and Generate Coverage'
+      env:
+        DISPLAY: ':99'
+    
+    - script: |
+        export DISPLAY=:99
+        ./gradlew test -Dcucumber.options="--tags @Test"
+      displayName: 'Run Selenium Tests'
+      continueOnError: true
+      env:
+        DISPLAY: ':99'
+    
+    - task: PublishTestResults@2
+      displayName: 'Publish Test Results'
+      condition: always()
+      inputs:
+        testResultsFormat: 'JUnit'
+        testResultsFiles: '**/build/test-results/test/*.xml'
+        mergeTestResults: true
+        failTaskOnFailedTests: false
+    
+    - task: PublishCodeCoverageResults@1
+      displayName: 'Publish Code Coverage'
+      condition: always()
+      inputs:
+        codeCoverageTool: 'JaCoCo'
+        summaryFileLocation: '**/build/reports/jacoco/test/jacocoTestReport.xml'
+        reportDirectory: '**/build/reports/jacoco/test/html'
+    
+    - task: PublishHtmlReport@1
+      displayName: 'Publish Cucumber Report'
+      condition: always()
+      inputs:
+        reportDir: 'target/cucumber-reports'
+        tabName: 'Cucumber Report'
+    
+    - task: SonarCloudPrepare@1
+      displayName: 'Prepare SonarCloud analysis'
+      inputs:
+        SonarCloud: 'SonarCloud' # Service connection name
+        organization: 'tu-organizacion' # Tu organización en SonarCloud
+        scannerMode: 'Other'
+        extraProperties: |
+          sonar.projectKey=selenium-fc-contra-cuentas
+          sonar.coverage.jacoco.xmlReportPaths=build/reports/jacoco/test/jacocoTestReport.xml
+          sonar.java.source=15
+          sonar.sources=src/main/java,src/test/java
+          sonar.tests=src/test/java
+          sonar.test.inclusions=**/*Test.java,**/Test*.java,**/*Steps.java,**/Runner.java
+          sonar.exclusions=**/target/**,**/build/**
+    
+    - script: ./gradlew sonarqube
+      displayName: 'Run SonarCloud Analysis'
+      env:
+        SONAR_TOKEN: $(SONAR_TOKEN)
+    
+    - task: SonarCloudPublish@1
+      displayName: 'Publish SonarCloud Results'
+      inputs:
+        pollingTimeoutSec: '300'
+    
+    - task: PublishBuildArtifacts@1
+      displayName: 'Publish Test Reports'
+      condition: always()
+      inputs:
+        pathToPublish: 'build/reports'
+        artifactName: 'test-reports'
+    
+    - task: PublishBuildArtifacts@1
+      displayName: 'Publish Screenshots'
+      condition: always()
+      inputs:
+        pathToPublish: 'target/screenshots'
+        artifactName: 'screenshots'
