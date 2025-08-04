@@ -155,7 +155,6 @@ public class Cobranza extends BasePage{
         
     }
     
-    
     public void saveRegister(){
         scrollDown(500);
         clickElement(buttonGuardar);
